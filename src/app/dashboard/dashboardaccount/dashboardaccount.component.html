@@ -1,0 +1,107 @@
+
+<div class="container">
+  <div class="row" style="margin-top:5%;">
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+      <img [src]="croppedImage"/>
+      <br>
+
+      <input type="file" (change)="fileChangeEvent($event)"  id="file" >
+          <label for="file" class="btn-1">Browse</label>
+            <image-cropper
+            [imageChangedEvent]="imageChangedEvent"
+            [maintainAspectRatio]="true"
+            [aspectRatio]="4 / 4"
+            [resizeToWidth]="256"
+            format="png"
+            (imageCropped)="imageCropped($event)"
+            (imageLoaded)="imageLoaded()"
+            (cropperReady)="cropperReady()"
+            (loadImageFailed)="loadImageFailed()">
+            </image-cropper>
+    <h3>Samuel Perera </h3>
+      <p>Since 12.3.2020</p>
+      <p>912343567V</p>
+
+      <p>samperera@gmail.com</p>
+    </div>
+    <div class="col-md-8 col-sm-12 col-xs-12">
+      
+      <div class="row text-center">
+        <div class="col-md-6 col-sm-12 col-xm-12">
+          <span class="badge badge-danger">0</span>
+          <label style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 10px;">All Uploads</label>
+          <br>
+          -Empty-
+        </div>
+        <div  class="col-md-6 col-sm-12 col-xm-12">
+          <span class="badge badge-danger">0
+          </span>
+          <label style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 10px;">All Shared</label>
+          <br>
+          -Empty-
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xm-12">
+        <form class="form-container">
+          <div class="form-group">
+            <label >Existing Password
+              <input type="password" class="form-control" placeholder="Type existing password">
+            </label>
+          </div>
+          <div class="form-group">
+            <label >Create New Password
+              <input type="password" class="form-control" placeholder="Type new password">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Retype New Password
+              <input type="password" class="form-control" placeholder="Retype new password">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Upload your Scanned NIC</label>
+          <div class="row">
+            <div class="col">
+              <div class="custom-file">
+                <input formControlName="nicside1"  type="file" class="custom-file-input form-control" required>
+                  <label class="custom-file-label" for="validatedCustomFile">
+                    Choose side 1...
+                  </label>
+            </div>
+            </div>
+          <br>
+            <div class="col">
+              <div class="custom-file">
+                <input formControlName="nicside2"  type="file" class="custom-file-input form-control" required>
+                <label class="custom-file-label" for="validatedCustomFile">
+                  Choose side 2...
+                </label>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div formGroupName="address">
+            <div class="form-group">
+              <label >Address-Line 1</label>
+              <input formControlName="line1"  type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+              <label >Address-Line 2</label>
+              <input formControlName="line2"  type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+              <label>City</label>
+              <input formControlName="city"  type="text" class="form-control" >
+            </div>
+          </div>
+          <button type="submit" routerLink="/Home" class="btn btn-primary ">CONFIRM</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

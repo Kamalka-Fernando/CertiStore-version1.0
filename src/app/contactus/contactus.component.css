@@ -1,0 +1,30 @@
+.btn-floating
+{
+  margin: 5%;
+  font-size: 30px;
+  color:darkblue;
+
+}
+.btn-fb{
+  margin-left: 0;
+}
+.btn-floating:hover {
+
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5%;
+  font-size: 50px;
+}
+.btn-fb:hover{
+  background-color: rgb(34, 34, 116);
+}
+.btn-tw:hover{
+  background-color: rgb(43, 107, 247);
+}
+.btn-insta:hover{
+  background-color: rgb(228, 11, 76);
+}
+.btn-in:hover{
+  background-color: rgb(43, 83, 168);
+}

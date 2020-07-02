@@ -1,0 +1,17 @@
+body
+{
+    padding: 0;
+}
+form
+{
+    font-weight:bold;
+    color: rgb(5, 62, 112);
+
+}
+.form-container
+{
+    border: rgb(16, 101, 175) rgb(5, 106, 139);
+    padding: 30px;
+    margin-top: 10%;
+  
+}

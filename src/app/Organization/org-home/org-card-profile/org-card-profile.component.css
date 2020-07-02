@@ -1,0 +1,26 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+
+}
+
+.carousel-control-next-icon:after
+{
+  
+  font-size: 70px;
+  font-weight:bold;
+  
+}
+
+.carousel-control-prev-icon:after {
+  
+  font-size: 70px;
+
+}
+.card{
+
+    background-color:#1565C0;
+    color: white;
+}

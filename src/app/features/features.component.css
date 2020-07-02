@@ -1,0 +1,26 @@
+.title
+{  
+        padding: 5px;
+        margin-top: 25px;
+        text-transform: uppercase;  
+}
+#services
+{
+    padding: 10px 0;
+}
+.service-img
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.services
+{
+    padding: 10px;
+}
+.services h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}

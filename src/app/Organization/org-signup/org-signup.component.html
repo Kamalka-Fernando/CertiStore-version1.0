@@ -1,0 +1,62 @@
+<section id="background">
+  <div class="container-fluid bg" >
+    <div class="row">
+      
+          <div class="col-md-6">
+            <div class="container ml-5" style="margin-top:7%;">
+              <img src="./assets/images/graph.png" height="500px" width="600px">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="container">
+            <!--form strated-->
+            <form class="form-container" >
+
+              <h2 style="text-align: center;">SIGN UP as an Organization</h2>
+
+              <div class="form-group">
+
+                <label >Name</label>
+                <input formControlName="fullname"  type="text" class="form-control" >
+                <!-- <small  [class.d-none]="RegisterUserData.get('fullname').valid ||
+                RegisterUserData.get('fullname').untouched" class="text-danger">Full Name is required</small> -->
+
+              </div>
+              <div class="form-group">
+
+                <label>Company Email Address</label>
+                <input  formControlName="email" type="text" class="form-control" >
+                <!-- <div *ngIf="RegisterUserData.get('email').invalid &&
+                RegisterUserData.get('email').touched">
+                  <small *ngIf="RegisterUserData.get('email').errors?.required" class="text-danger">Email Address is required!</small>
+                  <small *ngIf="RegisterUserData.get('email').errors?.pattern" class="text-danger">Check your Email Address</small>
+
+                </div> -->
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input formControlName="password"  type="Password" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label>Confirm Password</label>
+                <!-- <input [class.is-invalid] ="RegisterUserData.errors?.misMatch"  formControlName="confirmpassword" type="Password" class="form-control">
+                <small *ngIf = "RegisterUserData.errors?.misMatch" class="text-danger">Passwords are not matched</small> -->
+              </div>
+
+
+
+              <div class="form-group">
+                <label>
+                  <input formControlName="checkbox" type="checkbox" class="form-control"> Remember me
+                </label>
+              </div>
+             <button type="button" class="btn btn-primary active btn-lg btn-block" routerLink="/Orgdashboard/OrgHome">SIGN UP</button>
+        </form>
+            <!--form end-->
+          </div>
+          </div>
+         
+      </div>
+  
+  </div>
+</section>

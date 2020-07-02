@@ -1,0 +1,55 @@
+
+<nav class="navbar fixed-top navbar-expand-md" id="navbarmain" aria-label="">
+
+  <a class="navbar-brand" routerLink="/Home">
+    <img src="assets/images/Logo-small.png" class="img-responsive" width="30" height="30" alt="certistore logo">
+    CertiStore <br/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="color: aliceblue;">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/" style="color:white">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Home" style="color:white">Log Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Signin"style="color:white" >
+          <i class="fa fa-user"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br><br>
+<div class="row">
+    <div class="col-md-2 col-sm-2 col-xm-2" style="color: blue;background-color: #0D47A1;">
+      <!--nav for certificate selection,dasshbord-->
+      <div class="container">
+
+        <p class="headingDashboard" style="color:white;padding-top:30px;">Dashboard</p>
+          <button type="button" class="btn" routerLink="Dashboardnotifications">
+            <i class="fa fa-bell" style="margin-right: 10px;" ></i> <span class="hide">Notifications</span> <span class="badge badge-danger">4</span>
+          </button>
+          <nav class="nav flex-column navcss" aria-label="">
+            <a class="nav-link active" id="navlist" routerLink="Dashboardhome"><i class="fa fa-home" style="margin-right: 10px;margin-top:15px;margin-bottom:15px;color:white"></i><span class="hide" style="color:white;">Home</span><span class="sr-only">(current)</span></a>
+            <a class="nav-link" id="navlist" routerLink="Dashboardview"><i class="fa fa-eye" style="margin-right: 10px;margin-top:15px;margin-bottom:15px;color:white" ></i><span class="hide" style="color:white;">View</span></a>
+            <a class="nav-link" id="navlist" routerLink="Dashboardupload"><i class="fa fa-upload" style="margin-right: 10px;margin-top:15px;margin-bottom:15px;color:white" ></i><span class="hide" style="color:white;">Upload</span></a>
+            <a class="nav-link" id="navlist" routerLink="Dashboardshare"><i class="fa fa-share-square" style="margin-right: 10px;margin-top:15px;margin-bottom:15px;color:white"></i><span class="hide" style="color:white;">Share</span></a>
+            <a class="nav-link" id="navlist" routerLink="Dashboardaccount"><i class="fa fa-user" style="margin-right: 10px;margin-top:15px;margin-bottom:15px;color:white" ></i><span class="hide" style="color:white;">Account</span></a>
+          </nav>
+
+          <h5 style="margin-top:100%;margin-bottom:2%;color:white;">CertiStore</h5>
+          <h6 style="color:white;"><b>Secure | Store | Share</b></h6>
+        </div>
+      </div>
+
+    <div class="col-md-10 col-sm-10 col-xs-10" style="color: blue;background-color: white;">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+<app-footer></app-footer>
+

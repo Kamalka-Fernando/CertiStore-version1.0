@@ -1,0 +1,9 @@
+#footermain{
+  width: 100%;
+  background-color:#1A237E;
+  color: white;
+}
+#footerminor{
+  background-color: midnightblue;
+  color: azure;
+}

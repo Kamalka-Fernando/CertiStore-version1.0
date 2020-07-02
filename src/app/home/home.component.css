@@ -1,0 +1,83 @@
+body
+{
+    font-family: sans-serif;
+}
+
+.nametag
+{  
+    margin-top:100px;
+    box-sizing: border-box;
+    font-size: 70px;
+}
+
+.nametagCerti{
+      padding: 0;
+      background-color: #0D47A1;
+      color: #FFF;
+      text-align: right;
+      
+}
+
+.nametagStore{
+  padding: 0;
+  
+  color: #03154b;
+  font-weight: bold;
+  
+}
+
+.minor-text-two{
+  font-size:34px;
+}
+
+#banner
+{   
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background-color:#0D47A1 ;
+     color: #ffffff;
+     padding: top 7%  ;
+     background-size: cover;
+     background-attachment: fixed;
+     
+     
+}
+
+.img-fluid
+{
+    width: auto;
+    height: auto;
+
+}
+section .wave
+{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background-image: url('/assets/images/wave.png');
+    animation: animate 15s linear infinite;
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position :1360px;;
+    }
+}
+.buttonmain{
+        padding: 20px;
+        background-color:white;
+        font-weight:bold;
+        color:#03154b;
+        border-color: #2F3E48;
+        width: 600px;       
+}

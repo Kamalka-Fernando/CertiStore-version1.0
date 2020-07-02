@@ -1,0 +1,116 @@
+
+/*--nav bar dashboard--*/
+#navbarmain{
+   background-color: #1565C0;
+
+}
+
+
+
+.navbar-brand{
+  color: white;
+  font-weight:600;
+
+}
+
+.navbar-toggler{
+color: white;
+}
+/*navbar dashboard ends*/
+
+.col-md-10 .col-sm-10 .col-xs-10{
+  background-color: midnightblue;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+  .card-deck{
+    min-width: 70%;
+  }
+
+  h5,h6{
+    font-size: 1vw;
+  }
+  .headingDashboard{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: midnightblue;
+  }
+  .navcss{
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+  /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+  .card-deck{
+    min-width: 30%;
+  }
+  h5,h6{
+    font-size: 1vw;
+  }
+  .headingDashboard{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: midnightblue;
+  }
+  .btn {
+    background-color: white;
+    color: blue;
+    margin-top: 55%;
+  }
+  i{
+    font-size:30px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .hide{
+    display: none;
+  }
+  .headingDashboard{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .btn {
+    background-color: white;
+    color: blue;
+    margin-top: 55%;
+  }
+  i{
+    font-size:30px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .hide{
+    display: none;
+  }
+  .headingDashboard{
+    display: none;
+  }
+}
+
+.navcss{
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+.headingDashboard{
+
+  font-size:30px;
+  font-weight: bolder;
+  color: midnightblue;
+  margin-top: 3%;
+}
+
+.btn{
+  background-color: blue;
+  border-radius: 5%;
+  color:white;
+}
+
