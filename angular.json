@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "CertiStore"
+  "defaultProject": "CertiStore",
+  "cli": {
+    "analytics": false
+  }
 }
